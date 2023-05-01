@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "e7012863-8669-4cec-a361-10a1bdc65779",
+		"name": "Vindow",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-rapidapi-key",
+						"value": "{{header_key_local}}",
+						"type": "default"
+					},
+					{
+						"key": "x-rapidapi-host",
+						"value": "{{header_host_local}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{host_local}}/api/search/NewsSearchAPI?q=child&withThumbnails=true&pageNumber=1&pageSize=1",
+					"host": [
+						"{{host_local}}"
+					],
+					"path": [
+						"api",
+						"search",
+						"NewsSearchAPI"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "child"
+						},
+						{
+							"key": "withThumbnails",
+							"value": "true"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host_local",
+			"value": "http://localhost:3001",
+			"type": "default"
+		},
+		{
+			"key": "host",
+			"value": "https://contextualwebsearch-websearch-v1.p.rapidapi.com",
+			"type": "default"
+		},
+		{
+			"key": "header_key",
+			"value": "e28105562fmsh01edebafeeb6117p1f37e7jsn0221a314ae3d",
+			"type": "default"
+		},
+		{
+			"key": "header_host",
+			"value": "contextualwebsearch-websearch-v1.p.rapidapi.com",
+			"type": "default"
+		},
+		{
+			"key": "header_key_local",
+			"value": "123456",
+			"type": "default"
+		},
+		{
+			"key": "header_host_local",
+			"value": "localhost",
+			"type": "default"
+		}
+	]
+}
